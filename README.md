@@ -1,2 +1,4 @@
 # BasicWebpage
-Basic Github Pages webpage updatable through a REST API 
+Basic updatable Github Pages webpage 
+
+Currently HEAVILY WIP
