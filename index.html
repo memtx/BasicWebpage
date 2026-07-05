@@ -4,32 +4,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Základní Stránka</title>
+
+    <script src="parsedData.js"></script>
+
     <link rel="stylesheet" href="main.css">
-    
-    <script src="index.js"></script>
 </head>
 <body>
     <header>
-        <h1>Vítejte na stránce</h1>
-        <p>měněné informace můžete najít dole</p>
+        <!--<span style="font-size: 30px; cursor: pointer" onclick="toggleNav()">☰</span> 
+        -->
+        <div class="headerLeft">
+            <span onclick="">Úvod</span> 
+            <span class="headerLeft" onclick="toggleQR()">Archiv</span> 
+            <span>Kontakty</span>
+        </div>
     </header>
 
-    <main>
-        <section class="information">
-            <p>tohle tamto idk</p>
 
-        </section>
+	<div id="content">        
+        <div class="wrapper">
+            
+                <div class="card">
+                    <div class="card-content">
+                        <h1 id="poharTitul">{jméno poháru}</h1>
+                        <p id="poharDatum">{datum poháru}</p>
+                    </div>         
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        
+                        <h3>Statistiky:</h3>
+                        <div id="categories" class="categories">
+                            <!--Populated by JS-->
+                        </div>
+                        <table id="statistics">
+                            <!-- Populated by JS-->
+                        </table>
+                    </div>
+                </div>
+                
 
-        <section class="spreadsheetData">
-            <button id="txtClick"></button>
-            <p>WIP</p>
-        </section>
-    </main>
 
-    <footer>
-        <section>
-            <p>feet</p>
-        </section>
-    </footer>
+        </div>
+
+    </div>
+            <footer>
+                <section>
+                    <p>footer</p>
+                </section>
+            </footer>
+            
+
+    <script src="index.js"></script>
 </body>
 </html>
