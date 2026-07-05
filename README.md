@@ -1,5 +1,5 @@
 # BasicWebpage
-Basic updatable Github Pages webpage 
+Basic (kinda) updatable Github Pages webpage.
 
 Currently HEAVILY WIP
 

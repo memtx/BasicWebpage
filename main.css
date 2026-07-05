@@ -187,6 +187,12 @@ header span:hover{
     color: #124bac;
 
 }
+/*====== wrappers ======*/
+.wrapper {
+    width: fit-content;
+    margin: auto;
+    padding: 16px;
+}
 
 /*====== karty ==========*/
 .card 
@@ -238,11 +244,3 @@ padding: 12px;
 height: 160px;
 border-radius: 10px;
 }
-
-/*====== wrappers ======*/
-.wrapper {
-    width: fit-content;
-    margin: auto;
-    padding: 16px;
-}
-
