@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+    <meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="pageTitle">Soutěž NH</title>
+    <title>Archiv - Soutěž NH</title>
 
-    <script src="parsedData.js"></script>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="archiv.css">
 
-    <link rel="stylesheet" href="main.css">
+    <script src="archivData.js"></script>
 </head>
 <body>
     <header>
@@ -36,20 +41,12 @@
             
                 <div class="card">
                     <div class="card-content">
-                        <h1 id="poharTitul">{jméno poháru}</h1>
-                        <p id="poharDatum">{datum poháru}</p>
+                        <h1 id="nadpis">Archiv předchozích soutěží</h1>
                     </div>         
                 </div>
                 <div class="card">
-                    <div class="card-content">
-                        
-                        <h3>Statistiky:</h3>
-                        <div id="categories" class="categories">
-                            <!--Populated by JS-->
-                        </div>
-                        <table id="statistics">
-                            <!-- Populated by JS-->
-                        </table>
+                    <div id="rozcestnik" class="card-content">
+                        <!--Populated by JS-->
                     </div>
                 </div>
                 
@@ -59,7 +56,6 @@
 
     </div>
 
-
-    <script src="index.js"></script>
+    <script src="archiv.js"></script>
 </body>
 </html>
