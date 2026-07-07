@@ -1,0 +1,9 @@
+
+.card{
+    height: 80vh;
+}
+
+.card p{
+    color: black;
+    font-style: normal;
+}
