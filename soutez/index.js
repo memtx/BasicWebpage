@@ -1,5 +1,4 @@
 let el_categories = document.getElementById("categories");
-let el_statsTitle = document.getElementById("statisticsTitle");
 let el_statistics = document.getElementById("statistics");
 let el_allTeams   = document.getElementById("allTeams");
 
@@ -7,7 +6,6 @@ let el_allTeams   = document.getElementById("allTeams");
 
 let sortedTeams = [];
 let sortPosition = {};
-let navOpen = false;
 
 function strMax(a, b)
 {
@@ -113,6 +111,7 @@ function setActiveButton(btn)
     btn.classList.add("active");
 }
 
+//porovnávací funkce pro třídění týmů dle časů
 function timeComp(a, b)
 {
     if(a.pravy.length == 0) return 1; 
@@ -122,12 +121,26 @@ function timeComp(a, b)
 }
 //==== inicializace ====
 
-//proměnná data je načtena v html headeru z parsedData.js
 
+if (window.location.href.indexOf("archiv") == -1)
+    setTimeout(()=>{location.reload();}, 30000);
+/*
+//restart timeoutu při tabnutí pryč (asi není třeba)
+document.addEventListener("visibilitychange", () => 
+{
+    if (document.visibilityState === "visible") 
+    { setTimeout(()=>{location.reload()}, 20000); }
+    else
+    { clearTimeout(refreshTimeout); }
+})*/
+
+
+//proměnná data je načtena v html headeru z parsedData.js
+document.getElementById("pageTitle").innerText = data.soutezNazev;
 document.getElementById("poharTitul").innerText = data.soutezNazev;
 document.getElementById("poharDatum").innerText = data.soutezDatum;
 
-sortedTeams = data.teamy.toSorted(timeComp)
+sortedTeams = data.teamy.toSorted(timeComp);
 
 let currentCategory = data.kategorie[0];
 

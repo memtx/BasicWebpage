@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Základní Stránka</title>
+    <title id="pageTitle">Soutěž NH</title>
 
     <script src="parsedData.js"></script>
 
@@ -14,9 +14,15 @@
         <!--<span style="font-size: 30px; cursor: pointer" onclick="toggleNav()">☰</span> 
         -->
         <div class="headerLeft">
-            <span onclick="">Úvod</span> 
-            <span class="headerLeft" onclick="toggleQR()">Archiv</span> 
-            <span>Kontakty</span>
+            <a href="../uvod/uvod.html">
+                <span>Úvod</span>
+            </a> 
+            <a href="../archiv/archiv.html">
+                <span>Archiv</span>
+            </a> 
+            <a href="../kontakty/kontakty.html">
+                <span>Kontakty</span>
+            </a>
         </div>
     </header>
 

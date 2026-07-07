@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úvod - Soutěž NH</title>
+
+    <script src="../soutez/parsedData.js"></script>
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="uvod.css">
+
+    <script type="module">
+        let uvod = document.getElementById("soutez");
+        
+        uvod.innerText = "Momentálně není zaznamenávána žádná soutěž. Jestli myslíte že je tohle omyl, zkuste obnovit za pár minut stránku."
+        try
+            {uvod.innerHTML = `Nejnovější zaznamenaná soutěž je <a href="../soutez/index.html">${data.soutezNazev}</a>, konající se ${data.soutezDatum}.`}
+        catch{}
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="headerLeft">
+            <a href="../uvod/uvod.html">
+                <span>Úvod</span>
+            </a> 
+            <a href="../archiv/archiv.html">
+                <span>Archiv</span>
+            </a> 
+            <a href="../kontakty/kontakty.html">
+                <span>Kontakty</span>
+            </a>
+        </div>
+    </header>
+
+    <div id="backgroundContainer">
+        <div id="background"></div>
+    </div>
+
+    <div id="content">        
+
+        <div class="wrapper">
+            
+                <div class="card">
+                    <div class="card-content">
+                        <h1>
+                            Vítejte na úvodní stránce pro soutěže v Nižních Lhotách!     
+                        </h1>
+
+                        <p id="soutez">
+                            Nejnovější zaznamenaná soutěž je <a href="../index.html">${data.soutezNazev}</a>, konající se ${data.soutezDatum}.
+                        </p>
+                        <p>Archiv předchozích soutěží a kontakty na správce můžete najít v horní liště stránky.</p>
+                    </div>         
+                </div>
+                
+
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
