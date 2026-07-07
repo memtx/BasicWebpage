@@ -1,0 +1,24 @@
+{
+  "name": "basicwebpage",
+  "version": "1.0.0",
+  "description": "Basic updatable Github Pages webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memtx/BasicWebpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/memtx/BasicWebpage/issues"
+  },
+  "homepage": "https://github.com/memtx/BasicWebpage#readme",
+  "dependencies": {
+    "@ionic/core": "^8.8.13"
+  }
+}
