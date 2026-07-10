@@ -119,14 +119,43 @@ function timeComp(a, b)
     
     return (strMax(a.levy, a.pravy) > strMax(b.levy, b.pravy));
 }
-//==== inicializace ====
 
-//přidání scriptu s daty tak, aby obešel caching.
-<script src="parsedData.js"></script>
-let parsedScript = document.createElement("script");
-parsedScript.setAttribute("type", "text/javascript");
-parsedScript.setAttribute("src", "parsedData.js?cacheBust="+Math.random()*3000);
-document.getElementsByTagName("head")[0].appendChild(parsedScript);
+function loadFromData()
+{
+    //proměnná data je načtena v html headeru z parsedData.js
+    document.getElementById("pageTitle").innerText = data.soutezNazev;
+    document.getElementById("poharTitul").innerText = data.soutezNazev;
+    document.getElementById("poharDatum").innerText = data.soutezDatum;
+
+    sortedTeams = data.teamy.toSorted(timeComp);
+    let currentCategory = data.kategorie[0];
+
+    let categoryVse = document.createElement("button");
+    categoryVse.innerText = "Vše";
+    categoryVse.classList.add(["active"]);  
+    categoryVse.onclick = ()=>{loadLeaderboard(); setActiveButton(categoryVse);}
+    el_categories.appendChild(categoryVse);
+
+    let loopCounter = 0;
+    for(let category of data.kategorie)
+    {
+        let el = document.createElement("button");
+        el.innerText = data.kategorie[loopCounter];
+
+        const temp = data.kategorie[loopCounter]
+        el.onclick = ()=> {loadLeaderboard(temp); setActiveButton(el); }
+
+        el_categories.appendChild(el);
+        loopCounter++;
+    } 
+    /*
+    appendAllStatistics(data.kategorie);
+    loadTeams();
+    */
+    loadLeaderboard();
+}
+
+//==== inicializace ====
 
 
 if (window.location.href.indexOf("archiv") == -1)
@@ -142,36 +171,10 @@ document.addEventListener("visibilitychange", () =>
 })*/
 
 
-//proměnná data je načtena v html headeru z parsedData.js
-document.getElementById("pageTitle").innerText = data.soutezNazev;
-document.getElementById("poharTitul").innerText = data.soutezNazev;
-document.getElementById("poharDatum").innerText = data.soutezDatum;
 
-sortedTeams = data.teamy.toSorted(timeComp);
 
-let currentCategory = data.kategorie[0];
 
-let categoryVse = document.createElement("button");
-categoryVse.innerText = "Vše";
-categoryVse.classList.add(["active"]);  
-categoryVse.onclick = ()=>{loadLeaderboard(); setActiveButton(categoryVse);}
-el_categories.appendChild(categoryVse);
 
-let loopCounter = 0;
-for(let category of data.kategorie)
-{
-    let el = document.createElement("button");
-    el.innerText = data.kategorie[loopCounter];
 
-    const temp = data.kategorie[loopCounter]
-    el.onclick = ()=> {loadLeaderboard(temp); setActiveButton(el); }
 
-    el_categories.appendChild(el);
-    loopCounter++;
-} 
-/*
-appendAllStatistics(data.kategorie);
-loadTeams();
-*/
-loadLeaderboard();
 

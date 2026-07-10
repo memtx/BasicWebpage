@@ -8,6 +8,21 @@
     <!--
     <script src="parsedData.js"></script>
     --> 
+    <script>
+        let parsedScript = document.createElement("script");
+        parsedScript.setAttribute("type", "text/javascript");
+        parsedScript.setAttribute("src", "parsedData.js?cacheBust="+Math.random()*3000);
+        document.getElementsByTagName("head")[0].appendChild(parsedScript);
+
+        let scr_interval = setInterval(()=>{ 
+            if(typeof(data) !== 'undefined') 
+            {
+                loadFromData();
+                clearInterval(scr_interval);
+            }
+        }, 1)
+
+    </script>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
