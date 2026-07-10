@@ -1,7 +1,7 @@
 let data = 
 {
   "soutezNazev": "Pohár špatného Javascriptu 2026",
-  "soutezDatum": "10.07.2026 1:02:38",
+  "soutezDatum": "10.07.2026 12:32:01",
   "kategorie": [
     "Muži",
     "Ženy"
@@ -52,8 +52,8 @@ let data =
     {
       "jmeno": "Palkovice",
       "kategorie": "Muži",
-      "levy": "",
-      "pravy": ""
+      "levy": "00:26.432",
+      "pravy": "00:23.570"
     },
     {
       "jmeno": "Pražmo",
