@@ -46,8 +46,8 @@ let data =
     {
       "jmeno": "Nošovice",
       "kategorie": "Ženy",
-      "levy": "",
-      "pravy": ""
+      "levy": "00:01.456",
+      "pravy": "00:23.500"
     },
     {
       "jmeno": "Palkovice",

@@ -222,6 +222,7 @@ namespace GUI
 
 
             ExecuteCommand(d_projectRoot+"\\sendWebsiteData.bat");
+            MessageBox.Show("Data odeslána. Za minutu by měly být viditelná.");
 
             //git add .
             //git commit -m "app website update"
