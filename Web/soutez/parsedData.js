@@ -1,7 +1,7 @@
 let data = 
 {
   "soutezNazev": "Pohár špatného Javascriptu 2026",
-  "soutezDatum": "10.07.2026 13:27:32",
+  "soutezDatum": "10.07.2026 14:00:15",
   "kategorie": [
     "Muži",
     "Ženy"

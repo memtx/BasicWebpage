@@ -209,7 +209,7 @@ namespace GUI
             ProcessStartInfo ProcessInfo;
             Process Process;
 
-            ProcessInfo = new ProcessStartInfo("cmd.exe", "/k " + Command);
+            ProcessInfo = new ProcessStartInfo("cmd.exe", "/c " + Command);
             ProcessInfo.CreateNoWindow = true;
             ProcessInfo.UseShellExecute = true;
             
