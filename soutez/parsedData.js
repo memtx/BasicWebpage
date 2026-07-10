@@ -1,7 +1,7 @@
 let data = 
 {
   "soutezNazev": "Pohár Ukázkové Soutěže 2026",
-  "soutezDatum": "23.07.2026 17:00:13",
+  "soutezDatum": "23.07.2026 17:00:00",
   "kategorie": [
     "Muži",
     "Ženy"
