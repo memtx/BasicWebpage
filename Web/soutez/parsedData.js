@@ -1,7 +1,7 @@
 let data = 
 {
-  "soutezNazev": "Pohár špatného Javascriptu 2026",
-  "soutezDatum": "10.07.2026 14:00:15",
+  "soutezNazev": "Pohár Ukázkové Soutěže 2026",
+  "soutezDatum": "15.07.2026 17:00:02",
   "kategorie": [
     "Muži",
     "Ženy"
@@ -44,12 +44,6 @@ let data =
       "pravy": "00:23.570"
     },
     {
-      "jmeno": "Krásná Mohelnice",
-      "kategorie": "Muži",
-      "levy": "",
-      "pravy": ""
-    },
-    {
       "jmeno": "Pražmo",
       "kategorie": "Muži",
       "levy": "NP",
@@ -58,8 +52,20 @@ let data =
     {
       "jmeno": "Nošovice",
       "kategorie": "Ženy",
-      "levy": "00:34.420",
-      "pravy": "00:54.300"
+      "levy": "",
+      "pravy": ""
+    },
+    {
+      "jmeno": "Krásná Mohelnice",
+      "kategorie": "Muži",
+      "levy": "",
+      "pravy": ""
+    },
+    {
+      "jmeno": "Frýdek-Místek",
+      "kategorie": "Ženy",
+      "levy": "",
+      "pravy": ""
     }
   ]
 }
