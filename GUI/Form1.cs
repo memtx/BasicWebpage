@@ -66,7 +66,7 @@ namespace GUI
                 DateTime result;
                 Console.WriteLine(soutezDatum);
                 if (DateTime.TryParseExact(soutezDatum, formats, CultureInfo.InvariantCulture, DateTimeStyles.None, out result))
-                    return result;
+                    return result.AddSeconds(-result.Second);
                 else
                 { 
                     Console.WriteLine("Parsing datumu nevyšel. používám nynější.");

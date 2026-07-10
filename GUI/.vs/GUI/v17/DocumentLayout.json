@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{03F1F1DF-EF73-416B-830A-F3B8429827FE}|GUI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03F1F1DF-EF73-416B-830A-F3B8429827FE}|GUI.csproj|C:\\Users\\Karel\\Desktop\\BasicWebpage\\GUI\\gridrightclickmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03F1F1DF-EF73-416B-830A-F3B8429827FE}|GUI.csproj|solutionrelative:gridrightclickmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{03F1F1DF-EF73-416B-830A-F3B8429827FE}|GUI.csproj|C:\\Users\\Karel\\Desktop\\BasicWebpage\\GUI\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{03F1F1DF-EF73-416B-830A-F3B8429827FE}|GUI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03F1F1DF-EF73-416B-830A-F3B8429827FE}|GUI.csproj|C:\\Users\\Karel\\Desktop\\BasicWebpage\\GUI\\gridrightclickmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03F1F1DF-EF73-416B-830A-F3B8429827FE}|GUI.csproj|solutionrelative:gridrightclickmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GridRightClickMenu.cs",
               "DocumentMoniker": "C:\\Users\\Karel\\Desktop\\BasicWebpage\\GUI\\GridRightClickMenu.cs",
               "RelativeDocumentMoniker": "GridRightClickMenu.cs",
@@ -45,14 +45,14 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Karel\\Desktop\\BasicWebpage\\GUI\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwD8AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowEkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-07T20:11:33.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Karel\\Desktop\\BasicWebpage\\GUI\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
