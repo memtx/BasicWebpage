@@ -34,7 +34,8 @@
               "RelativeToolTip": "GridRightClickMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T22:20:21.859Z"
+              "WhenOpened": "2026-07-09T22:20:21.859Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,7 +45,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Karel\\Desktop\\BasicWebpage\\GUI\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAALMAAAAAAAAAAADwv9MAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwD8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-07T20:11:33.633Z",
               "EditorCaption": ""
@@ -58,7 +59,8 @@
               "ToolTip": "C:\\Users\\Karel\\Desktop\\BasicWebpage\\GUI\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T19:49:43.586Z"
+              "WhenOpened": "2026-07-07T19:49:43.586Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

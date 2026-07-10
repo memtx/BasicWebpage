@@ -1,0 +1,265 @@
+:root{
+    --primary: #124bac;
+    --secondary: #a5c6ff;
+    --secondary-hover: #8aabe4;
+    
+    --secondary-alt: #4e8fff;
+    --ternary: #eef2f7;
+
+    --border-radius: 14px;
+}
+
+body 
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f5f7fb; 
+}
+h1 
+{
+    margin: 0 0;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@media(max-width: 800px)
+{
+    h1{
+    font-size: 2em;
+    }
+}
+
+h3{
+    margin: 5px;
+}
+
+
+/*====== stats ======*/
+
+table{
+    /*background-color: var(--ternary);*/
+    padding: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #111;
+}
+td{
+    text-align: center;
+    border-width: 1px;
+    border-color: #111;
+    position: static;
+}
+
+.statsFirst td
+{ background: #f3c969; }
+
+.statsSecond td
+{ background:gainsboro;}
+
+.statsThird td
+{ background:peru; }
+
+.statsHighlight td 
+{ font-weight:bold;} 
+
+tr:nth-child(2) td:first-child { border-top-left-radius: var(--border-radius); }
+tr:nth-child(2) td:last-child { border-top-right-radius: var(--border-radius); }
+tr:last-child td:first-child { border-bottom-left-radius: var(--border-radius); }
+tr:last-child td:last-child { border-bottom-right-radius: var(--border-radius); }
+
+
+
+tr:nth-child(2) td { border-top-style: solid; }
+tr td:first-child { border-left-style: solid; border-right-style: solid; }
+tr:last-child td { border-bottom-style: solid; }
+tr td:last-child {  border-left-style: solid; border-right-style: solid; }
+
+@media(max-width: 800px)
+{
+    tr td{
+        border-left-style: solid;
+    }
+    tr td:first-child{
+        border-right-style: none;
+    }
+}
+
+/*====== pozadí ======*/
+
+#content {
+    transition: margin-left 0.5s;
+    padding-top: 50px;
+}
+
+#backgroundContainer
+{
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#background{
+    position: absolute;
+    
+    background-color: #f3c969;
+    width: 125%;
+    height: 125%;
+    padding: 0 0;
+    background: url("pozadi.png") no-repeat center center fixed;
+    background-repeat:round;
+    background-size: cover;
+    animation: upDown 30s alternate infinite ease-in-out;
+    background-position-x: -12.5%;
+
+}
+
+
+@keyframes upDown {
+  to { transform: translatex(-12.5%);}
+}
+/*====== footer ======*/
+footer
+{
+    background-color: var(--ternary);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+/*====== tlačítka ==========*/
+.buttons {
+    margin-top: auto;
+}
+
+button {
+
+    background: var(--secondary);
+    padding: 8px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 14px;
+    border-color: #111;
+    border-width: 1px;
+}
+button:hover {
+    background-color: var(--secondary-hover);
+}
+
+/* aktivní */
+button.active {
+    background-color: var(--secondary-alt);
+    border-width: 2px;
+}  
+/*====== filtry ==========*/
+.categories {
+    display: flex;
+    flex-wrap:nowrap;
+    /*background: var(--ternary);*/
+    border-radius: 999px;
+    gap: 5px;
+    margin-bottom: 10px;
+}   
+
+/*====== header ==========*/
+header 
+{
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    background: var(--primary);
+    color: #222;
+
+    text-align: left;
+    font-size:medium;
+    font-weight: bold;
+
+}
+
+.headerLeft
+{
+    padding-left: 30px;
+}
+
+.headerLeft span
+{
+    float: left;
+    cursor: pointer;
+    height: 100%;
+    padding: 15px 15px;
+    color: var(--ternary);
+
+}
+
+
+header span:hover{
+    background-color: var(--ternary);
+    color: #124bac;
+
+}
+/*====== wrappers ======*/
+.wrapper {
+    width: fit-content;
+    margin: auto;
+    padding: 16px;
+    min-width: 70%;
+}
+
+/*====== karty ==========*/
+.card 
+{
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 10px;
+}
+
+.card:hover {
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.card-content h1{
+    padding: 20px 20px 0 20px;
+}
+
+.card p {
+    padding-left: 7px;
+    font-size: 16px;
+    font-style: italic;
+    color:#666;
+}
+
+.card img {
+width: 100%;
+height: 160px;       
+object-fit: cover;   
+border-radius: 14px 14px 0 0;
+}
+
+.card img.qr {
+object-fit: contain;
+background: white;
+padding: 12px;
+height: 160px;
+border-radius: 10px;
+}

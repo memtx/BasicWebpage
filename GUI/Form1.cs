@@ -60,13 +60,19 @@ namespace GUI
                 string[] formats = new string[]
                 {
                    "d.M. yyyy",
-                   "d.M. yyyy (HH:mm)"
+                   "d.M. yyyy (HH:mm)",
+                   "d.M.yyyy HH:mm:ss",
                 };
                 DateTime result;
+                Console.WriteLine(soutezDatum);
                 if (DateTime.TryParseExact(soutezDatum, formats, CultureInfo.InvariantCulture, DateTimeStyles.None, out result))
                     return result;
                 else
+                { 
+                    Console.WriteLine("Parsing datumu nevyšel. používám nynější.");
                     return DateTime.Now;
+                }
+                    
             }
 
             public void UpdateData(string soutez, string datum, DataGridViewRowCollection teamy)
@@ -182,6 +188,7 @@ namespace GUI
             }
             
             data.soutezNazev = jmeno_tb.Text;
+            soutezNameLatinized = RemoveDiacritics(data.soutezNazev).Replace(" ", string.Empty);
             data.soutezDatum = datum_dt.Value.ToString();
                 
             data.teamy.Clear();
