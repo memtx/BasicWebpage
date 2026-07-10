@@ -156,7 +156,13 @@ function loadFromData()
 }
 
 //==== inicializace ====
-
+let scr_interval = setInterval(()=>{ 
+    if(typeof(data) !== 'undefined') 
+    {
+        loadFromData();
+        clearInterval(scr_interval);
+    }
+}, 1)
 
 if (window.location.href.indexOf("archiv") == -1)
     setTimeout(()=>{location.reload();}, 30000);
