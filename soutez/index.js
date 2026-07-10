@@ -161,8 +161,9 @@ let scr_interval = setInterval(()=>{
     {
         loadFromData();
         clearInterval(scr_interval);
+        
     }
-}, 1)
+}, 10)
 
 if (window.location.href.indexOf("archiv") == -1)
     setTimeout(()=>{location.reload();}, 30000);
