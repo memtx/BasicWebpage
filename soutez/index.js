@@ -121,6 +121,13 @@ function timeComp(a, b)
 }
 //==== inicializace ====
 
+//přidání scriptu s daty tak, aby obešel caching.
+<script src="parsedData.js"></script>
+let parsedScript = document.createElement("script");
+parsedScript.setAttribute("type", "text/javascript");
+parsedScript.setAttribute("src", "parsedData.js?cacheBust="+Math.random()*3000);
+document.getElementsByTagName("head")[0].appendChild(parsedScript);
+
 
 if (window.location.href.indexOf("archiv") == -1)
     setTimeout(()=>{location.reload();}, 30000);
