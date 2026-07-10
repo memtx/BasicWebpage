@@ -1,3 +1,3 @@
 let archiv = [
-    {jmeno:"Pohár Archivované Bukvice 1969", cesta:"javascript2026/javascript2026.html"}
+{"jmeno":"Pohár špatného Javascriptu 2026","cesta":"PoharspatnehoJavascriptu2026/index.html"}
 ]
