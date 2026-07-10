@@ -209,14 +209,11 @@ namespace GUI
             ProcessStartInfo ProcessInfo;
             Process Process;
 
-            ProcessInfo = new ProcessStartInfo("cmd.exe", "/C " + Command);
+            ProcessInfo = new ProcessStartInfo("cmd.exe", "/k " + Command);
             ProcessInfo.CreateNoWindow = true;
-            ProcessInfo.UseShellExecute = false;
-            ProcessInfo.RedirectStandardOutput = true;
-
+            ProcessInfo.UseShellExecute = true;
+            
             Process = Process.Start(ProcessInfo);
-            Console.WriteLine("output: "+Process.StandardOutput.ReadToEnd());
-            Process.WaitForExit();
         }
 
         private void aktualizovat_Click(object sender, EventArgs e)
@@ -224,7 +221,8 @@ namespace GUI
             updateParsedData();
 
 
-            ExecuteCommand($"cd {d_projectRoot} && git add . && pause");
+            ExecuteCommand(d_projectRoot+"\\sendWebsiteData.bat");
+
             //git add .
             //git commit -m "app website update"
             //git subtree push --prefix Web origin gh-pages
