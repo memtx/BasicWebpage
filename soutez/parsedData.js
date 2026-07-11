@@ -8,61 +8,61 @@ let data =
   ],
   "teamy": [
     {
-      "jmeno": "Vyšní Lhoty",
+      "jmeno": "Skupina (Ženy)",
       "kategorie": "Ženy",
       "levy": "00:14.154",
       "pravy": "00:16.134"
     },
     {
-      "jmeno": "Nižní Lhoty",
+      "jmeno": "Skupina",
       "kategorie": "Muži",
       "levy": "00:13.134",
       "pravy": "00:15.134"
     },
     {
-      "jmeno": "Raškovice",
+      "jmeno": "Tým A",
       "kategorie": "Muži",
       "levy": "00:45.134",
       "pravy": "01:14.136"
     },
     {
-      "jmeno": "Bahno",
+      "jmeno": "Tým B",
       "kategorie": "Muži",
       "levy": "NP",
       "pravy": "NP"
     },
     {
-      "jmeno": "Žabeň",
+      "jmeno": "Družstvo",
       "kategorie": "Muži",
       "levy": "00:24.134",
       "pravy": "00:24.136"
     },
     {
-      "jmeno": "Palkovice",
+      "jmeno": "Seskupení A",
       "kategorie": "Muži",
       "levy": "00:26.432",
       "pravy": "00:23.570"
     },
     {
-      "jmeno": "Pražmo",
+      "jmeno": "Seskupení B",
       "kategorie": "Muži",
       "levy": "NP",
       "pravy": "NP"
     },
     {
-      "jmeno": "Nošovice",
+      "jmeno": "Seskupení (Ženy)",
       "kategorie": "Ženy",
       "levy": "",
       "pravy": ""
     },
     {
-      "jmeno": "Krásná Mohelnice",
+      "jmeno": "Družina",
       "kategorie": "Muži",
       "levy": "",
       "pravy": ""
     },
     {
-      "jmeno": "Frýdek-Místek",
+      "jmeno": "Družstvo (Ženy)",
       "kategorie": "Ženy",
       "levy": "",
       "pravy": ""
